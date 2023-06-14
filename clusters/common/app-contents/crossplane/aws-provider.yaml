@@ -3,7 +3,7 @@ kind: Provider
 metadata:
   name: provider-aws
   annotations:
-    kapp.k14s.io/change-group: crossplane-provider
+    kapp.k14s.io/change-group: crossplane/provider
 spec:
   package: xpkg.upbound.io/crossplane-contrib/provider-aws:v0.40.0
   skipDependencyResolution: true
