@@ -2,7 +2,7 @@
 apiVersion: kappctrl.k14s.io/v1alpha1
 kind: App
 metadata:
-  name: accelerators-config-app
+  name: crossplane-config-app
   namespace: tanzu-sync
   annotations:
     kapp.k14s.io/change-group: crossplane-provider-app/app
