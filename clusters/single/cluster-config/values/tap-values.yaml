@@ -27,7 +27,7 @@ tap_install:
       controller: false
       gitops_install:
         ref: origin/main
-        subPath: clusters/common/namespace-provisoner
+        subPath: clusters/common/namespace-provisioner
         url: https://github.com/jeffellin/single
       additional_sources:
       - git:
