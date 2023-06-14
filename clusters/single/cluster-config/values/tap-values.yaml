@@ -22,3 +22,24 @@ tap_install:
       kp_default_repository: "registry.gcp.ellin.net/tap/build"
 
     supply_chain: basic
+
+    namespace_provisioner:
+      controller: false
+      gitops_install:
+        ref: origin/main
+        subPath: clusters/common/namespaces/namespace-provisoner
+        url: https://github.com/jeffellin/single
+      additional_sources:
+      - git:
+          ref: origin/main
+          subPath: clusters/common/namespaces/dev
+          url: https://github.com/jeffellin/single.git
+        path: _ytt_lib/dev-namespace-setup
+      import_data_values_secrets:
+      - name: workload-git-auth
+        namespace: tap-install
+        create_export: true
+      overlay_secrets:
+      - name: workload-git-auth-overlay
+        namespace: tap-install
+        create_export: true

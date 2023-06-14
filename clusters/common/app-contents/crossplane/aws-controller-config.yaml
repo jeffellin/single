@@ -2,13 +2,12 @@ apiVersion: pkg.crossplane.io/v1alpha1
 kind: ControllerConfig
 metadata:
   name: aws-config
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::266463974589:role/tap-16-XPL
 spec:
   env:
   # AWS region required to resolve service endpoints
   - name: AWS_REGION
     value: us-east-2
-  metadata:
-    annotations:
-      eks.amazonaws.com/role-arn: arn:aws:iam::266463974589:role/tap-16-XPL
   podSecurityContext:
     fsGroup: 2000
