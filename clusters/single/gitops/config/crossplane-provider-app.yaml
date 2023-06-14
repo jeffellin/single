@@ -1,0 +1,25 @@
+---
+apiVersion: kappctrl.k14s.io/v1alpha1
+kind: App
+metadata:
+  name: accelerators-config-app
+  namespace: tanzu-sync
+  annotations:
+    kapp.k14s.io/change-group: crossplane-provider-app/app
+    kapp.k14s.io/change-rule: "upsert after upserting tap"
+spec:
+  serviceAccountName: sync-sa
+  syncPeriod: 1m
+  fetch:
+  - git: 
+      url: https://github.com/jeffellin/single.git
+      ref: main
+  template:
+  - ytt:
+      paths:
+      - clusters/common/app-contents/crossplane
+      valuesFrom:
+       - secretRef:
+           name: tanzu-gitops
+  deploy:
+  - kapp: {}
