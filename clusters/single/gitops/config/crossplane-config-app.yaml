@@ -5,8 +5,8 @@ metadata:
   name: crossplane-config-app
   namespace: tanzu-sync
   annotations:
-    kapp.k14s.io/change-group: crossplane/provider
-    kapp.k14s.io/change-rule: "upsert after upserting tap"
+    kapp.k14s.io/change-group: crossplane/config
+    kapp.k14s.io/change-rule: "upsert after upserting crossplane/provider"
 spec:
   serviceAccountName: sync-sa
   syncPeriod: 1m
@@ -17,6 +17,6 @@ spec:
   template:
   - ytt:
       paths:
-      - clusters/common/app-contents/crossplane
+      - clusters/common/app-contents/crossplane-config
   deploy:
   - kapp: {}
