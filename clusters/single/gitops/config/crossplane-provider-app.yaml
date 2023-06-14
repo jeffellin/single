@@ -18,8 +18,5 @@ spec:
   - ytt:
       paths:
       - clusters/common/app-contents/crossplane
-      valuesFrom:
-       - secretRef:
-           name: tanzu-gitops
   deploy:
   - kapp: {}
