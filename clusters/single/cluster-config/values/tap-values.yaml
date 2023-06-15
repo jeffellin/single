@@ -7,14 +7,14 @@ tap_install:
 
     cnrs:
       domain_template: "{{.Name}}-{{.Namespace}}.{{.Domain}}"
-      domain_name: "foo.amer.end2end.link"
+      domain_name: "tap.vmw-ellin.link"
       ingress:
         internal:
           namespace: tanzu-system-ingress
         external:
           namespace: tanzu-system-ingress
     shared:
-      ingress_domain: foo.amer.end2end.link
+      ingress_domain: tap.vmw-ellin.link
       image_registry:
         project_path: registry.gcp.ellin.net/tap/tbs
 
