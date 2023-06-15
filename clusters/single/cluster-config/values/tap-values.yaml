@@ -18,6 +18,10 @@ tap_install:
       image_registry:
         project_path: registry.gcp.ellin.net/tap/tbs
 
+    tap_gui:
+      app_config:
+          auth:
+              allowGuestAccess: true
     buildservice:
       kp_default_repository: "registry.gcp.ellin.net/tap/build"
 
