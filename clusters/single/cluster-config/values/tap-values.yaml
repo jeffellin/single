@@ -5,6 +5,7 @@ tap_install:
     excluded_packages: # installed by TMC elsewhere
     - cert-manager.tanzu.vmware.com
     - fluxcd-source-controller.tanzu.vmware.com
+    - contour.tanzu.vmware.com
     
     
     ceip_policy_disclosed: true # Installation fails if this is set to 'false'
