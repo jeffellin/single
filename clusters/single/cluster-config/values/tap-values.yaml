@@ -2,6 +2,10 @@
 tap_install:
   values:
     profile: full
+    excluded_packages: # installed by TMC elsewhere
+    - cert-manager.tanzu.vmware.com
+    - fluxcd-source-controller.tanzu.vmware.com
+    
     
     ceip_policy_disclosed: true # Installation fails if this is set to 'false'
 
@@ -47,3 +51,4 @@ tap_install:
       - name: workload-git-auth-overlay
         namespace: tap-install
         create_export: true
+    
