@@ -18,7 +18,7 @@ tap_install:
         external:
           namespace: tanzu-system-ingress
     shared:
-      ingress_domain: tap.vmw-ellin.link
+      ingress_domain: tap.vmw.ellin.net
       image_registry:
         project_path: registry.gcp.ellin.net/tap/tbs
 
