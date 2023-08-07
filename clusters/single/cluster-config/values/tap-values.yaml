@@ -1,3 +1,4 @@
+#@data/values
 ---
 tap_install:
   values:
@@ -10,7 +11,7 @@ tap_install:
 
     cnrs:
       domain_template: "{{.Name}}-{{.Namespace}}.{{.Domain}}"
-      domain_name: "tap.vmw.ellin.net"
+      domain_name: #@ data.values.domain
       ingress:
         internal:
           namespace: tanzu-system-ingress
