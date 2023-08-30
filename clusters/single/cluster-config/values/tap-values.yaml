@@ -15,8 +15,7 @@ tap_install:
           namespace: tanzu-system-ingress
         external:
           namespace: tanzu-system-ingress
-      image_registry:
-        project_path: registry.gcp.ellin.net/tap/tbs
+
 
     tap_gui:
       app_config:
