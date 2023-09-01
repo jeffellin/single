@@ -4,7 +4,6 @@ tap_install:
     profile: run
     excluded_packages: # installed by TMC elsewhere
     - fluxcd.source.controller.tanzu.vmware.com
-    - contour.tanzu.vmware.com
     - namespace-provisioner.apps.tanzu.vmware.com
     - tap-telemetry.tanzu.vmware.com 
     
