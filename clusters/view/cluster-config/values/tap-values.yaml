@@ -8,6 +8,8 @@ tap_install:
     - tap-telemetry.tanzu.vmware.com 
     - contour.tanzu.vmware.com
     - cert-manager.tanzu.vmware.com
+    - learningcenter.tanzu.vmware.com
+    - workshops.learningcenter.tanzu.vmware.com
     ceip_policy_disclosed: true # Installation fails if this is set to 'false'
 
     cnrs:
