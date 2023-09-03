@@ -1,7 +1,7 @@
-clusters/single/cluster-config/values/tap-sensitive-values.yaml
-clusters/single/cluster-config/config/tap-install/git-ssh-secret-sensitive-values.yaml
-clusters/single/cluster-config/config/tap-install/git-secrets-values-template.yaml
-clusters/single/cluster-config/config/tap-install/registry-secret-sensitive-values.yaml
+**/tap-sensitive-values.yaml
+**/git-ssh-secret-sensitive-values.yaml
+**/git-secrets-values-template.yaml
+**/registry-secret-sensitive-values.yaml
 clusters/tap-run/cluster-config/values/tap-sensitive-values.yaml
 clusters/tap-run/cluster-config/config/tap-install/git-ssh-secret-sensitive-values.yaml
 clusters/tap-run/cluster-config/config/tap-install/git-secrets-values-template.yaml
