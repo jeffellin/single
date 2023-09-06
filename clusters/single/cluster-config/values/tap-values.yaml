@@ -22,6 +22,7 @@ tap_install:
           auth:
               allowGuestAccess: true
     shared:
+      activateAppLiveViewSecureAccessControl: false
       kubernetes_version: "1.25.9"
       image_registry:
         project_path: "registry.gcp.ellin.net/tap3"    
