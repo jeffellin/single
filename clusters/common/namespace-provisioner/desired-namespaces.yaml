@@ -8,3 +8,7 @@ namespaces:
   - name: canary-test
   - name: spring-petclinic
   - name: jellin-dev
+  - name: workloads
+  - name: dotnet-todos
+  - name: spring-petclinic
+    scanpolicy: lax
