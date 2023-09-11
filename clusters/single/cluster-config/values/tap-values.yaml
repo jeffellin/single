@@ -10,6 +10,7 @@ tap_install:
 
     cnrs:
       domain_template: "{{.Name}}-{{.Namespace}}.{{.Domain}}"
+      domain_name: home.lab.ellin.net
       ingress:
         internal:
           namespace: tanzu-system-ingress
@@ -22,6 +23,7 @@ tap_install:
           auth:
               allowGuestAccess: true
     shared:
+      ingress_domain: home.lab.ellin.net
       activateAppLiveViewSecureAccessControl: false
       kubernetes_version: "1.25.9"
       image_registry:
