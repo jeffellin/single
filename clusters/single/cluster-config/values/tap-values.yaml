@@ -26,9 +26,6 @@ tap_install:
       kubernetes_version: "1.25.9"
       image_registry:
         project_path: "registry.gcp.ellin.net/tap3"    
-    buildservice:
-      kp_default_repository: "registry.gcp.ellin.net/build2"
-
     supply_chain: basic
 
     namespace_provisioner:
