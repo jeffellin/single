@@ -3,8 +3,9 @@ tap_install:
         shared:
             image_registry:
                 project_path: ENC[AES256_GCM,data:w7izIczkkzx0Fza8Cll2qxzuCcl7DnAJ4j0=,iv:pwAuIMBb0hc7QCuoByM+Uw44+2IMnd1mz8FyqmnxJa8=,tag:52zMZ9v2OxRAaRshxXnFlA==,type:str]
-                username: ENC[AES256_GCM,data:p8noss0=,iv:KZTleaMJmYzIvjTYt8Q54GQFzYt60uKp7st82apOftw=,tag:b3E9RsviEUyRrv2MfCd4jw==,type:str]
-                password: ENC[AES256_GCM,data:kHIED5x5ESYdBad3BZZ1s2Tk,iv:7Th1Mh3zEciaT5CUhtbPMIG284clNxwjrDG2UflqjsM=,tag:jTDrUFk9rKHVU/cAKoHedg==,type:str]
+                secret:
+                    name: ENC[AES256_GCM,data:4QhCZVVt/Q==,iv:+06EwV5CJG6CpQcyjeMLVnqzc/4czFWSyrAJXrqcjXE=,tag:FHuKv33uSiK7LmLb3WAkgg==,type:str]
+                    namespace: ENC[AES256_GCM,data:3QHgM3X7cg==,iv:irdao/tLYE2lxD+N+l8tW9p7VkwnCYezRKkZJJbJw0Y=,tag:4rfTjOIOX1TTCszcKdWi/w==,type:str]
 sops:
     kms: []
     gcp_kms: []
@@ -20,8 +21,8 @@ sops:
             U09zc1VYaDlBck9kSEtOazVTbjJ2YmcKx7JUNbzDUsElvD3bBlr59CT63XqnKaKA
             GLAHFBN9fI4xEpAoMSSLPBIKtm9y2FPxbs4u38c4iHh+Wynmzx+tbg==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2023-06-13T22:26:19Z"
-    mac: ENC[AES256_GCM,data:obkABoE2EbxDgB/xDttptV5FyQ2DNCmfIyqGWVUCPN/ZcxiEIzmBevrrIacGFs3WNkYc9vCatSI8yCahMOvidNFMWJdXfBQrL0EzKswQLC/XQqDjPat+bewO6DYKfl9cYIlGN0Yj9q/CmA4pxnPwapmvqxnf+auhRcVMzaBofbk=,iv:UWUMYug68/GjBvyOG7HHs5Yhx+9Rzzvy8wE9irVZveM=,tag:OrA0JCGG686uFCXxY6gZsw==,type:str]
+    lastmodified: "2023-09-15T23:35:17Z"
+    mac: ENC[AES256_GCM,data:xZnhVrAXh/9m3OYk4vbj42tMIHfxkDnG5vfPXzoGa+pht2oyzVR0qqZnYRWsMAug8L4x0G9clUj0tITda9vW87BMobvAgucpCEEu1HO3nmD1w3occEfYWY+/cwn1+GARJQfIUnshU0SEzOMeULfqqWGv2LQ8dEGAicxNwQSV2IY=,iv:O4z1c4Lvfn5FBdNUyZDCDjGcHx7Y6yblvRP92NZ7abg=,tag:ki9Qw3c7waeEPoKfV6546g==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.7.3
