@@ -11,3 +11,6 @@ tap_install:
     ceip_policy_disclosed: true # Installation fails if this is set to 'false'
 
     supply_chain: basic
+    
+    buildservice:
+      kp_default_repository: "registry.gcp.ellin.net/tap/buildservice"
