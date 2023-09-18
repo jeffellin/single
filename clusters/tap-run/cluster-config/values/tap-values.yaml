@@ -12,7 +12,8 @@ tap_install:
       activateAppLiveViewSecureAccessControl: false
       backend:
         host: appliveview.view.lab.ellin.net
-        sslDeactivated: true
+        sslDeactivated: True
+        ingressEnabled: True
 
     cnrs:
       domain_template: "{{.Name}}-{{.Namespace}}.{{.Domain}}"
