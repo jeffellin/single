@@ -14,7 +14,7 @@ tap_install:
       namespace: "default" # (Optional) Defaults to default namespace.
       targetImagePullSecret: registry-credentials
       metadataStore:
-        url: https://metadata-store.view.lab.ellin.ne # Url with http / https
+        url: https://metadata-store.view.lab.ellin.net # Url with http / https
         caSecret:
             name: store-ca-cert
             importFromNamespace: metadata-store-secrets # Must match with `ingress-cert.data."ca.crt"` of store on view cluster
