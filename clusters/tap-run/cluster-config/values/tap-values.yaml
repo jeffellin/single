@@ -4,7 +4,6 @@ tap_install:
     profile: run
     excluded_packages: # installed by TMC elsewhere
     - fluxcd.source.controller.tanzu.vmware.com
-    - namespace-provisioner.apps.tanzu.vmware.com
     - tap-telemetry.tanzu.vmware.com 
     - contour.tanzu.vmware.com
     ceip_policy_disclosed: true # Installation fails if this is set to 'false'
@@ -26,7 +25,6 @@ tap_install:
       kp_default_repository: "registry.gcp.ellin.net/tap/build"
 
     supply_chain: basic
-
     namespace_provisioner:
       controller: false
       gitops_install:
@@ -36,9 +34,9 @@ tap_install:
       additional_sources:
       - git:
           ref: origin/main
-          subPath: clusters/common/namespaces/dev
+          subPath: clusters/common/namespaces/qa
           url: https://github.com/jeffellin/single.git
-        path: _ytt_lib/dev-namespace-setup
+        path: _ytt_lib/qa-namespace-setup
       import_data_values_secrets:
       - name: workload-git-auth
         namespace: tap-install
@@ -47,4 +45,3 @@ tap_install:
       - name: workload-git-auth-overlay
         namespace: tap-install
         create_export: true
-    
