@@ -21,6 +21,8 @@ tap_install:
 
 
     tap_gui:
+      appLiveView:
+        activateAppLiveViewSecureAccessControl: false
       app_config:
           kubernetes:
               serviceLocatorMethods:

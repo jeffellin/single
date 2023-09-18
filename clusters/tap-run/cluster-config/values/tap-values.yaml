@@ -8,6 +8,8 @@ tap_install:
     - contour.tanzu.vmware.com
     ceip_policy_disclosed: true # Installation fails if this is set to 'false'
 
+    shared:
+      activateAppLiveViewSecureAccessControl: true
     cnrs:
       domain_template: "{{.Name}}-{{.Namespace}}.{{.Domain}}"
       ingress:
