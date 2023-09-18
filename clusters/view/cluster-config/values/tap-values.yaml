@@ -28,10 +28,10 @@ tap_install:
               clusterLocatorMethods:
                   - type: 'config'
                     clusters:
-                    - url: https://192.168.1.119:6443
-                      name: tap-run-1
+                    - url: https://192.168.1.22:6443
+                      name: tap-build
                       authProvider: serviceAccount
-                      serviceAccountToken: eyJhbGciOiJSUzI1NiIsImtpZCI6IlVhRkJyRzFCOGtXaUNKeUVReFdGYU4xNVFYZkE3VFU3OFdsOUNwc2l5dDgifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJ0YXAtZ3VpIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6InRhcC1ndWktdmlld2VyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6InRhcC1ndWktdmlld2VyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiMGUyZTA2MmItZjFhZS00YjllLTgwOWItYTQyODg1ZjYyZWEwIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50OnRhcC1ndWk6dGFwLWd1aS12aWV3ZXIifQ.nrAS7onKSi6GUdag5pXB5-AgQMTGCnDo7OBQBFs94c-8zDqvYjNWvLVqAgI-Iv4BGFwfIQg6RrHeRB14ZDUQ9dKgCli-WCAOg9Bn28Sbe7CbbAFaRd0Qpu7mltUR1HvjY1EOZywZUKVJuNNdl22mo-QBnu8Ut2QQb9xjb5IVguHC3vCM7NKIoV9g4e0HkZNejICyfqBgLgXcCS90tIZaTv0Y7WhxWPKgJlXhRc_3ZYe0hvKIR8HCRIvL8CGqHAYHs-DDuNSItEBZx88o-VW0LrLdGYZtZNuzJ_oRhwxHtrrUOcSfIBZkZFXMiqTEU5D32zMZecDpR8xuF_fvLqyEdA
+                      serviceAccountToken:  eyJhbGciOiJSUzI1NiIsImtpZCI6Im4xTnZoQVB3SkwxamoyZjVyUGNZOUhVSnprQzk3bmUyWi0tSVItM1JKN00ifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJ0YXAtZ3VpIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6InRhcC1ndWktdmlld2VyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6InRhcC1ndWktdmlld2VyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiZDZjYzY1YmQtZDU4YS00OGQ3LTgwMzQtM2MxNjI4OWEyNzQ3Iiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50OnRhcC1ndWk6dGFwLWd1aS12aWV3ZXIifQ.Hf4BT9q8spXpTM1wpfRIiNFmDkZOXxV_XkpLEh8OgwQ_VhKoqXNuTsUjomWMYKgyMZitArzRkDbwQ1Xs9Rs15PteEzdpQ2fXm4aH3biJsFo5AY9Zj5K395VfG80DtJui2xi7JNwlgfpD26xHezYI417B9Ew88E08iMJ_3Yj_swLrwIddeLoKfNCzH-wMv7OiTjVyf3Bw2aIFB4kWLM_Rdek8zVYw96IGgHBuwJueMb6XJekNQjInpjjZP1tQGBmkycrlmRzy32iZgqmxEgVu4KjJrXcL-YfYlP7nDQhpn9zH6QvY73ayBLGpi-1f3bQHPyuSjx0F0fnOaV0HmAqMHA
                       skipTLSVerify: true
                       skipMetricsLookup: true
           auth:
