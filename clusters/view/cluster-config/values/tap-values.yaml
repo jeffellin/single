@@ -19,7 +19,8 @@ tap_install:
         external:
           namespace: tanzu-system-ingress
 
-
+    appliveview:
+     ingressEnabled: true
     tap_gui:
       appLiveView:
         activateAppLiveViewSecureAccessControl: false
