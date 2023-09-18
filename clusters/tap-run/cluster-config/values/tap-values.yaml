@@ -8,8 +8,12 @@ tap_install:
     - contour.tanzu.vmware.com
     ceip_policy_disclosed: true # Installation fails if this is set to 'false'
 
-    shared:
-      activateAppLiveViewSecureAccessControl: true
+   appliveview_connector:
+      activateAppLiveViewSecureAccessControl: false
+      backend:
+        host: appliveview.view.lab.ellin.net
+        sslDeactivated: true
+
     cnrs:
       domain_template: "{{.Name}}-{{.Namespace}}.{{.Domain}}"
       ingress:
