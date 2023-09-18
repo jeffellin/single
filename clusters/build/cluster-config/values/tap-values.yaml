@@ -10,6 +10,17 @@ tap_install:
     ceip_policy_disclosed: true # Installation fails if this is set to 'false'
     metadata_store:
       ns_for_export_app_cert: "*"
+    grype:
+      namespace: "default" # (Optional) Defaults to default namespace.
+      targetImagePullSecret: registry-credentials
+      metadataStore:
+        url: https://metadata-store.view.lab.ellin.ne # Url with http / https
+        caSecret:
+            name: store-ca-cert
+            importFromNamespace: metadata-store-secrets # Must match with `ingress-cert.data."ca.crt"` of store on view cluster
+        authSecret:
+            name: store-auth-token # Must match with valid store token of metadata-store on view cluster
+            importFromNamespace: metadata-store-secrets
     supply_chain: testing_scanning
     ootb_supply_chain_testing_scanning:
       registry:
