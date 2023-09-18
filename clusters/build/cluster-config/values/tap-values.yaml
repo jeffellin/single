@@ -9,8 +9,22 @@ tap_install:
 
     ceip_policy_disclosed: true # Installation fails if this is set to 'false'
 
-    supply_chain: basic
-    
+    supply_chain: testing_scanning
+    ootb_supply_chain_testing_scanning:
+      registry:
+        server: "registry.gcp.ellin.net"
+        repository: "tap/supply-chain"
+      gitops:
+        commit_strategy: pull_request
+        branch: test
+        repository_owner: tanzu-end-to-end
+        server_address: https://github.com
+        ssh_secret: git-https
+        pull_request:
+          commit_branch: supply-chain
+          server_kind: github
+          pull_request_title: Ready for review
+          pull_request_body: Pull Request by TAP
     namespace_provisioner:
       controller: false
       gitops_install:
