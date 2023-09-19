@@ -1,0 +1,72 @@
+---
+tap_install:
+  values:
+    profile: iterate
+    excluded_packages: # installed by TMC elsewhere
+      - fluxcd.source.controller.tanzu.vmware.com
+      - tap-telemetry.tanzu.vmware.com
+      - contour.tanzu.vmware.com
+    image_policy_webhook:
+      allow_unmatched_tags: true
+    appliveview_connector:
+      activateAppLiveViewSecureAccessControl: false
+      backend:
+        host: appliveview.view.lab.ellin.net
+        caCertData: |-
+          -----BEGIN CERTIFICATE-----
+          MIIDHjCCAgagAwIBAgIQFbJsltC1StVMoNzaK4Aq7zANBgkqhkiG9w0BAQsFADAp
+          MScwJQYDVQQDEx50YXAtaW5ncmVzcy1zZWxmc2lnbmVkLXJvb3QtY2EwHhcNMjMw
+          OTE4MDAxODI5WhcNMjMxMjE3MDAxODI5WjApMScwJQYDVQQDEx50YXAtaW5ncmVz
+          cy1zZWxmc2lnbmVkLXJvb3QtY2EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK
+          AoIBAQC2r/W9+l2hZqgkXvNCuX5EW/6H/VxaUuMF2LsXtar1nMQnisufFOrFH0BP
+          IcH++NgwDOnp3a3XvKAXVEmVLKDEA+7+4ps/Qsqy9G+co/tMciraNYE8YD1shvPf
+          2RlNoH7w6/rt9kpel+77u4o9kpUNLFpYyO4d0AuDPibhIcwNFMtDOuXSyPP/pez/
+          k7PwKNOTNmLp4ykaDl/khYQwP5C9eg+K7DXGApgtO2U41+iAoOqt1VzrnceUD9Ad
+          pH9VwvdlfnJULRaTltJ4Hb0NKCoYRuk5gldozhZ9v801pIsgXxrtdcSSORfmYZof
+          ZhaqHrDLt7HVg0WFvXNRm6PRnQtRAgMBAAGjQjBAMA4GA1UdDwEB/wQEAwICpDAP
+          BgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBQRfwWZ5gbKlx6zrhlve8YhjRPREDAN
+          BgkqhkiG9w0BAQsFAAOCAQEAF++hxq2pwZCmO2qthpJjZDSGVvHnnqKlkVh8CahD
+          eWFqNj2FdBEWMH/SIsupkDxJfg9FJwHHf/OTeWQIR+qi6VCOriEdRIMFgU6kOMKJ
+          BUXjzeHQjGAWgudkK0RZWU0o3MIcTtZ8pdClDwj43O+qLxXEXIz9hH30jOCrqUL2
+          aoE36rhi1XKVZW9nzuXtN/Njpy/nv+ip39VCPGPsj8ZjXBp3t1C2bIn92oDDv16X
+          /gJfUz1Z2nbkZjKv0abbzW5TeRs8zRp5fuWPm+Qenom4PtqhuxRBhJVNMngoeo/t
+          GfaUWFzdNDhpjf5QrT1RltOgNyPh2oQOTF7eswCGmY7Z0A==
+          -----END CERTIFICATE-----
+        sslDeactivated: False
+        ingressEnabled: True
+    cnrs:
+      domain_template: "{{.Name}}-{{.Namespace}}.{{.Domain}}"
+      ingress:
+        internal:
+          namespace: tanzu-system-ingress
+        external:
+          namespace: tanzu-system-ingress
+
+    ceip_policy_disclosed: true # Installation fails if this is set to 'false'
+    metadata_store:
+      ns_for_export_app_cert: "*"
+    supply_chain: basic
+    namespace_provisioner:
+      controller: false
+      gitops_install:
+        ref: origin/main
+        subPath: clusters/common/namespace-provisioner
+        url: https://github.com/jeffellin/single
+      additional_sources:
+      - git:
+          ref: origin/main
+          subPath: clusters/common/namespaces/dev
+          url: https://github.com/jeffellin/single.git
+        path: _ytt_lib/dev-namespace-setup
+      import_data_values_secrets:
+      - name: workload-git-auth
+        namespace: tap-install
+        create_export: true
+      overlay_secrets:
+      - name: workload-git-auth-overlay
+        namespace: tap-install
+        create_export: true
+    
+
+    buildservice:
+      kp_default_repository: "registry.gcp.ellin.net/tap/buildservice"
