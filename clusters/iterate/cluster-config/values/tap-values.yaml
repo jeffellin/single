@@ -6,6 +6,7 @@ tap_install:
       - fluxcd.source.controller.tanzu.vmware.com
       - tap-telemetry.tanzu.vmware.com
       - contour.tanzu.vmware.com
+      - namespace-provisioner.apps.tanzu.vmware.com
     image_policy_webhook:
       allow_unmatched_tags: true
     appliveview_connector:
