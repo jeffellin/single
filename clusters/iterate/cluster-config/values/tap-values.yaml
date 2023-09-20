@@ -2,6 +2,18 @@
 tap_install:
   values:
     profile: iterate
+    local_source_proxy:
+      repository: registry.gcp.ellin.net/tap/local-source-proxy
+
+      push_secret:
+      name: registry-credentials
+      namespace: tap-install
+      create_export: true
+
+      pull_secret:
+      name: registry-credentials
+      namespace: tap-install
+      create_export: true
     excluded_packages: # installed by TMC elsewhere
       - fluxcd.source.controller.tanzu.vmware.com
       - tap-telemetry.tanzu.vmware.com
