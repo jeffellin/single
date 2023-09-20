@@ -67,9 +67,9 @@ tap_install:
       additional_sources:
       - git:
           ref: origin/main
-          subPath: clusters/common/namespaces/dev
+          subPath: clusters/common/namespaces/iterate
           url: https://github.com/jeffellin/single.git
-        path: _ytt_lib/dev-namespace-setup
+        path: _ytt_lib/iterate-namespace-setup
       import_data_values_secrets:
       - name: workload-git-auth
         namespace: tap-install
