@@ -2,14 +2,14 @@
 tap_install:
   values:
     profile: iterate
+    shared:
+      ingress_issuer: letsencrypt-contour-cluster-issuer
     local_source_proxy:
       repository: registry.gcp.ellin.net/tap/local-source-proxy
-
       push_secret:
         name: registry-credentials
         namespace: tap-install
         create_export: false
-
       pull_secret:
         name: registry-credentials
         namespace: tap-install
