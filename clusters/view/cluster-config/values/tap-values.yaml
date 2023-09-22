@@ -10,7 +10,8 @@ tap_install:
     - learningcenter.tanzu.vmware.com
     - workshops.learningcenter.tanzu.vmware.com
     ceip_policy_disclosed: true # Installation fails if this is set to 'false'
-
+    shared:
+      ingress_issuer: letsencrypt-contour-cluster-issuer
     cnrs:
       domain_template: "{{.Name}}-{{.Namespace}}.{{.Domain}}"
       ingress:
