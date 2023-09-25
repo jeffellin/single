@@ -13,7 +13,7 @@ tap_install:
     shared:
       ingress_issuer: letsencrypt-contour-cluster-issuer
     cnrs:
-      domain_template: "{{.Name}}-{{.Namespace}}.{{.Domain}}"
+      domain_template: "{{.Name}}.{{.Namespace}}.{{.Domain}}"
       ingress:
         internal:
           namespace: tanzu-system-ingress
