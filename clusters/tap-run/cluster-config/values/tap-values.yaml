@@ -9,6 +9,8 @@ tap_install:
     ceip_policy_disclosed: true # Installation fails if this is set to 'false'
     shared:
       ingress_issuer: letsencrypt-contour-cluster-issuer
+    api_auto_registration:
+      tap_gui_url: https://tap-gui.view.lab.ellin.net
     appliveview_connector:
       activateAppLiveViewSecureAccessControl: false
       backend:
