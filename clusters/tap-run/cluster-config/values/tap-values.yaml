@@ -38,7 +38,7 @@ tap_install:
         ingressEnabled: True
         
     api_auto_registration:
-      tap_gui_url: https://tap-gui.view.lab.ellin.net
+      tap_gui_url: "https://tap-gui.view.lab.ellin.net"
 
     cnrs:
       domain_template: "{{.Name}}-{{.Namespace}}.{{.Domain}}"
