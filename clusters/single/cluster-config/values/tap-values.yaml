@@ -25,6 +25,7 @@ tap_install:
           auth:
               allowGuestAccess: true
     shared:
+      ingress_issuer: letsencrypt-contour-cluster-issuer
       ingress_domain: home.lab.ellin.net
       activateAppLiveViewSecureAccessControl: false
       kubernetes_version: "1.25.9"
