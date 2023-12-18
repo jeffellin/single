@@ -23,6 +23,11 @@ tap_install:
     appliveview:
      ingressEnabled: true
     tap_gui:
+      app_config:
+        backend:
+          baseUrl: https://tap-gui.view.lab.ellin.net
+          cors:
+            origin: https://tap-gui.view.lab.ellin.net
       appLiveView:
         activateAppLiveViewSecureAccessControl: false
 
