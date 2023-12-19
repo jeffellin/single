@@ -30,7 +30,13 @@ tap_install:
             type: 'awsS3'
             awsS3:
               bucketName: ellin-tap-techdocs
+              accountId: 1234
               region: us-east-2
+        aws:
+          accounts:
+            - accountId: 1234
+              accessKeyId: AKIA56DNJMJLZPJTPK3O
+              secretAccessKey: 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
         backend:
           baseUrl: https://tap-gui.view.lab.ellin.net
           cors:
