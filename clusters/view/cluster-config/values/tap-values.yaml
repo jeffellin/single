@@ -24,12 +24,6 @@ tap_install:
      ingressEnabled: true
     tap_gui:
       app_config:
-  
-        aws:
-          accounts:
-            - accountId: 1234
-              accessKeyId: AKIA56DNJMJL6C7RR3HN
-              secretAccessKey: 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
         backend:
           baseUrl: https://tap-gui.view.lab.ellin.net
           cors:

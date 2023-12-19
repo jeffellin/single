@@ -1,0 +1,22 @@
+tap_install:
+    sensitive_values:
+        shared:
+            image_registry:
+                project_path: registry.gcp.ellin.net/tap
+                username: admin
+                password: knab_ziy6PHIM5piwn
+        tap_gui:
+            app_config:
+            techdocs:
+                builder: 'external'
+                publisher:
+                type: 'awsS3'
+                awsS3:
+                    bucketName: ellin-tap-techdocs
+                    accountId: 958006911575
+                    region: us-east-2
+                aws:
+                    accounts:
+                        - accountId: 958006911575
+                          accessKeyId: AKIA56DNJMJL6C7RR3HN
+                          secretAccessKey: 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
