@@ -24,18 +24,11 @@ tap_install:
      ingressEnabled: true
     tap_gui:
       app_config:
-        techdocs:
-          builder: 'external'
-          publisher:
-            type: 'awsS3'
-            awsS3:
-              bucketName: ellin-tap-techdocs
-              accountId: 1234
-              region: us-east-2
+  
         aws:
           accounts:
             - accountId: 1234
-              accessKeyId: AKIA56DNJMJLZPJTPK3O
+              accessKeyId: AKIA56DNJMJL6C7RR3HN
               secretAccessKey: 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
         backend:
           baseUrl: https://tap-gui.view.lab.ellin.net
