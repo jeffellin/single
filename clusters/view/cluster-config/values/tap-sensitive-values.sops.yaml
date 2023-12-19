@@ -6,12 +6,20 @@ tap_install:
                 username: ENC[AES256_GCM,data:p8noss0=,iv:KZTleaMJmYzIvjTYt8Q54GQFzYt60uKp7st82apOftw=,tag:b3E9RsviEUyRrv2MfCd4jw==,type:str]
                 password: ENC[AES256_GCM,data:kHIED5x5ESYdBad3BZZ1s2Tk,iv:7Th1Mh3zEciaT5CUhtbPMIG284clNxwjrDG2UflqjsM=,tag:jTDrUFk9rKHVU/cAKoHedg==,type:str]
         tap_gui:
-            app_config:
+            app_config: null
+            techdocs:
+                builder: ENC[AES256_GCM,data:5LDEya25V8g=,iv:14ZnoBKKK6aBuRfk94u0jnnQDXbP6XU9sDGe1VfOidA=,tag:NEW5bYBPGRluBWJhQKty6Q==,type:str]
+                publisher: null
+                type: ENC[AES256_GCM,data:fxQBzbY=,iv:tuDBr9Fz78biYQVHqxVOFsqkTZK/hOHuo/irAOTZ8wo=,tag:9OG0WAmVGflcEXR3a8CI3w==,type:str]
+                awsS3:
+                    bucketName: ENC[AES256_GCM,data:XU/WR26FJkJrK7oNUs1nKHYI,iv:3prQiWVIoNro7c97rTbbR7aTo6KOrjk/s9kprwYz/7c=,tag:Axm2JtmnJ38zIkRcuzqx2w==,type:str]
+                    accountId: ENC[AES256_GCM,data:PGkxlKKmRN58wPN2,iv:FSeQ//HKgKUy3y9aKGu4CyikGsb/LKyzYom1cXM4Qtg=,tag:1W4xs2A4R3fJ1xVlpoLysA==,type:str]
+                    region: ENC[AES256_GCM,data:fuS6uK56Z6ik,iv:mq8EYzehEXVt+gMsncpFIfUSPvwRRJXh7kaGTjC4zhA=,tag:OxbfHMVTRR5+KjnFPOP3Zg==,type:str]
                 aws:
                     accounts:
-                        - accountId: ENC[AES256_GCM,data:E8BPD1WZKhogMdkj,iv:/8/dseEoK3WtPFbxGsUoH7glEFoT5bzXHv61rwk7SWA=,tag:Mlaxcg0ykIQjtectKbr2gQ==,type:int]
-                          accessKeyId: ENC[AES256_GCM,data:mCilJXvLeRQmjNfyhI/7OtW7UvE=,iv:hz0kEBuRj8qfBC5HFSefdgwCeV2r/neyGtpq2YQxS1A=,tag:HHXcl/NHvUl6CtJE/XScNw==,type:str]
-                          secretAccessKey: ENC[AES256_GCM,data:gSL1PdUbhhUTrcQuwHI+rAMj+FT5PiZ4adKeBi9ETIyiLw73U0JrLw==,iv:vLQ7KQBA8DQleYz/WCR1NEV4MIzkfVRx/8NyCTrLxuE=,tag:LW3rH1DxAUIEhq2PDxRdog==,type:str]
+                        - accountId: ENC[AES256_GCM,data:sM3pTyvGHl8YSKxa,iv:X4VF6WKBTR8s12H+WFWRF46UvJeyX3fth5x7OmH7oug=,tag:zKZ+XVU/k7Q189eJzvbb4A==,type:str]
+                          accessKeyId: ENC[AES256_GCM,data:8riia/cNih57KsNQ2JIvclg9irU=,iv:mprBVYV8u9+1IVTFlrU0iXaUM88QrW/v0PosyWwkXNE=,tag:dBBy6dGtm8GYMPzZUj/T9w==,type:str]
+                          secretAccessKey: ENC[AES256_GCM,data:yth12ERusCc4x4nWbjJy9poNy5Y4JPA+mjwO+MPmYygBGnurbb1Cmg==,iv:olvdwIkwr98bEtzZYdBU8QAGS0zWFtJIqqCqi4A7nEY=,tag:g4r55H2G9U0mePyqA7UsPA==,type:str]
 sops:
     kms: []
     gcp_kms: []
@@ -27,8 +35,8 @@ sops:
             U09zc1VYaDlBck9kSEtOazVTbjJ2YmcKx7JUNbzDUsElvD3bBlr59CT63XqnKaKA
             GLAHFBN9fI4xEpAoMSSLPBIKtm9y2FPxbs4u38c4iHh+Wynmzx+tbg==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2023-12-19T20:25:25Z"
-    mac: ENC[AES256_GCM,data:DMX/9gYlhsg4hngD3icoIa5sncsSXytDA5eMX8uEwcNQmn8eVe2ylQr0FMLzyVd3qnSlaODku7jUU5ladCTS34SqkuX1/ta2z2XvWneHuYubS5irazzKJf1zoBgWinGQAhSdVHDp1c3VshSf+yP+HxS2k9k7M4gSfpf/yw5jAXE=,iv:TBVor6qh/1IR5A0asHlBIkrGbZYvinuKCU2arU/jwds=,tag:pkMNCtEAzLCnhsbUNjxyaA==,type:str]
+    lastmodified: "2023-12-19T20:31:14Z"
+    mac: ENC[AES256_GCM,data:EN02JUSZhIkX5i3bKQtXJAd0rwVx2J2+T/tB7jdmOIn3rMIjZUlfvR7xx2mjJkfU9lRPaDieXEssMG+InOMUSDmc4iqXcXNxwiWEk3rsPtAkrAoKPljA6eUBYWQmZ6KG7Q6yQydQ0l3NyOVm2OvokpjT3XqvzGoHmfOF0k1BPoY=,iv:AMDJ4MrWTY6kPKBNUP6uNHeXnnZVdLt+7W7qr1wXQDs=,tag:DdJQNQQQx/HUD6naDhBd6Q==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.8.1
