@@ -29,7 +29,7 @@ tap_install:
           publisher:
             type: 'awsS3'
             awsS3:
-              bucketName: e2e-tap-appref-techdocs
+              bucketName: ellin-tap-techdocs
               region: us-east-2
         backend:
           baseUrl: https://tap-gui.view.lab.ellin.net
