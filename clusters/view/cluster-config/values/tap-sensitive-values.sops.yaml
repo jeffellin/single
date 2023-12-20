@@ -11,10 +11,10 @@ tap_install:
                     builder: ENC[AES256_GCM,data:izS4sxRzh7o=,iv:AA7hVYRCqTV8aW6+mvvosjKH559UOm2LiME1SJS8TTA=,tag:EnTMvcfQS3OVl+Rs2h4dKw==,type:str]
                     publisher:
                         type: ENC[AES256_GCM,data:DmlG9rQ=,iv:O/+4NZqLsGUNBv/naGEwmGDR06whaycEBN3keZtzMq0=,tag:fQwwzWMEvtT9OQncF8mWEg==,type:str]
-                    awsS3:
-                        bucketName: ENC[AES256_GCM,data:0/an8uEo+5+EIO9CBtUJjzJK,iv:x+WE2FB8VK61chxU1DAZuHQGHYwe+j2jxaCU+4IGOJM=,tag:z3CstdtFcBs3KvwF7pcf8w==,type:str]
-                        accountId: ENC[AES256_GCM,data:hjq6dOiWGKeqjzWo,iv:fw6/jMsQ+fDkUNvS6XMy90kSgmtITQDxQdtKJmLvYXM=,tag:7JK7BsOn+ohYjaz1lOKqCg==,type:str]
-                        region: ENC[AES256_GCM,data:uWZa4KjmXtWP,iv:peXCl/l2uKKrZeVNBnmOnTRWiyWwachnXWtpP1B+1Q8=,tag:bTakxL4BIWNtpDLq6ujr8Q==,type:str]
+                        awsS3:
+                            bucketName: ENC[AES256_GCM,data:aBPcScVQWB0jlFhVQmJ46EEh,iv:/J4KxCv5azpAtGQqmBT2vR1ETvpmqn7zhRZUsmjUUE0=,tag:g81OVNQn5GIIDVBxnXorYQ==,type:str]
+                            accountId: ENC[AES256_GCM,data:6Dstga5/stDwwezp,iv:Wwdt+fnzg8ks6T+/FSFiH/SwrB3LVygtvSJM3yJ5aW8=,tag:Kk8ETqd1TlWqaW82BYo4VA==,type:str]
+                            region: ENC[AES256_GCM,data:29B0WzTW7g9N,iv:7RxuTZ7cCwRCzLqwfpMsSfjwcgkm8NBjrDiUz5UQ5mE=,tag:s7SxY6cpxIPuB3zTzmXh+A==,type:str]
                     aws:
                         accounts:
                             - accountId: ENC[AES256_GCM,data:LCDd9cu3yhjgESpp,iv:uPFKQF7WcHAqnKt+RHz28HAbsPYuH6VOP4jwEp6RYSY=,tag:X5ecn6UGBNK8MEqYwjligA==,type:str]
@@ -35,8 +35,8 @@ sops:
             U09zc1VYaDlBck9kSEtOazVTbjJ2YmcKx7JUNbzDUsElvD3bBlr59CT63XqnKaKA
             GLAHFBN9fI4xEpAoMSSLPBIKtm9y2FPxbs4u38c4iHh+Wynmzx+tbg==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2023-12-20T17:58:15Z"
-    mac: ENC[AES256_GCM,data:V6LvTgzR3BhQl0wUr/cQEwG0f93bOYJGiyxX6xeeGdiBdCNaKulS6oVPRMdqb4tgAuOYZNr7AhFoILCywlHbeWct2Ro7VemdfuhUktjXA2fcyt7dA2Wuq3A6ggrHWjBU2wv49HdhEdGQi7fu7GXOqplc3JtGnVf0u7JXKMih5GA=,iv:W7W7xfESN0Bs4qTuLnjjADIVlWH2sw+XKUnL5D1QMNI=,tag:vIcAsSsMT/6ZjOhv1Gvcgw==,type:str]
+    lastmodified: "2023-12-20T18:07:32Z"
+    mac: ENC[AES256_GCM,data:leFN3dHQHPsGl9DmI+ZCkIw1/LNLS1LVKZ8CHG/VYiZOk5s2TnfQMXDBxLNRMSPsPtbfLC28h/n3Cdg0tlBBbJke3R5x/5qrHPp0hcsufNzsmFZdtXvhfN0QerYPwgcQOBJoyabR2hXWMkjM0zZN0JxwLiBWUVFgexejUFXCui0=,iv:pAFOwDkxCU8g09Cyiz39XIscNlbpCeWqzFgjhWC1/m0=,tag:+t7Q5omiCiDBO6+xW+z76A==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.8.1
