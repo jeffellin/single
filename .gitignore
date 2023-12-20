@@ -7,3 +7,4 @@ clusters/tap-run/cluster-config/config/tap-install/git-ssh-secret-sensitive-valu
 clusters/tap-run/cluster-config/config/tap-install/git-secrets-values-template.yaml
 clusters/tap-run/cluster-config/config/tap-install/registry-secret-sensitive-values.yaml
 hack/**
+.decrypted*
