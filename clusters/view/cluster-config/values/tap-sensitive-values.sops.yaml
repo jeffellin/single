@@ -12,7 +12,7 @@ tap_install:
                     publisher:
                         type: ENC[AES256_GCM,data:d+ZTKFI=,iv:vcKUBI6vw1N3dm3O2JSmHZzrmGntX8xP582NJuTBl0U=,tag:DsEmfsn+llVE/Wj0J391oQ==,type:str]
                         awsS3:
-                            bucketName: ENC[AES256_GCM,data:qtANoL23x5qhwbu0jzumNA==,iv:hw7TbPTKP/36cxoy/rAGyZfc30wyhu8iYknEOkdgXrQ=,tag:+kV+w4NjiOMl7iRTl9RANA==,type:str]
+                            bucketName: ENC[AES256_GCM,data:Jr2NlGr63PSlUYLokzTSN8Ms,iv:rfHf4GpgjGBjf3Jec2DOT6EFCr/IoLO/K/r19BN4yx8=,tag:8hxIwjg2f/TPNOJAdid4Rg==,type:str]
                             credentials:
                                 accessKeyId: ENC[AES256_GCM,data:xK4+/3TkeqdqlT9/PtaS6Si7HOA=,iv:j5auK5IBKxUs9ebg6L5E63jZ5bxTpD0OccpynJ6Fcpw=,tag:ayHZ0Uk20SgM1KPiQiMwww==,type:str]
                                 secretAccessKey: ENC[AES256_GCM,data:hy6B9jj6zv+dL40nFYNWTRWUukJRzT2fihW+fg3MkRUctpWG0zflGw==,iv:Pva9XeUMDy1BEy7a0Kje7PEDYxVzaNs+g0fHu65O4yA=,tag:Ab2JvECMz+xmoYVpHShKCw==,type:str]
@@ -32,8 +32,8 @@ sops:
             U09zc1VYaDlBck9kSEtOazVTbjJ2YmcKx7JUNbzDUsElvD3bBlr59CT63XqnKaKA
             GLAHFBN9fI4xEpAoMSSLPBIKtm9y2FPxbs4u38c4iHh+Wynmzx+tbg==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2023-12-20T19:16:39Z"
-    mac: ENC[AES256_GCM,data:AdJ+9GP9Q1EoBJod8ZwrWwIlirQymvuwdSB9fUnGhg0vOafbaFR5EwwfiIkVgdACJ3R/1lZairaBcH7R1Hxk7VQyWz9o/TpWZ4O5RA1I1y+3M9rjNkfmWwNFS9Hi/PI3d4iFrQ8LMn3FSf83M1ohwrwPLDboos91Z4krOS/R3+k=,iv:vhYxfbNAGlcLvHW0Gfs4u0A3gFwg1B4UySljnDky06o=,tag:TC+6ypVi6UqmBCUPHVEeBg==,type:str]
+    lastmodified: "2023-12-20T19:18:07Z"
+    mac: ENC[AES256_GCM,data:a0TZnMS/jVvYxlSREeTAgifyhNQD/Zwc2CAhCThU8crsqpRVaWDGeC7AIPK1OecwmGeSqbwlPcXEobozoZ0F3oIolwcpnGVoy70aDP+z9/FtLDbuAHYFlFCufCh63NKM0xsLgcCYi/30Bjd+i1oi4PMsM9l/vtaG9gQgu3K6pKs=,iv:GcmmxWcwEavrzTJ/aW9EsFQETvv+QKpaQHQZZKN0bFo=,tag:XS6AAOnHmFn25orkBTKnsA==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.8.1
